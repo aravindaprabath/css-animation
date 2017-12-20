@@ -3,6 +3,7 @@ var changeButton = document.querySelector(".changeday");
 
 
 var timeChange = function () {
+    preventDefault();
     if (mainDiv.classList.contains("day")) {
         mainDiv.classList.remove("day");
         mainDiv.classList.add("night");
