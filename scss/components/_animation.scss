@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.anim-1-container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(18, 92, 203);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+  perspective: 500px;
+  @include e(whiteball) {
+    width: auto;
+    height: 5em;
+    padding: 0em 2em;
+    background-color: #074ba4;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    color: white;
+    font-weight: bold;
+    justify-items: center;
+    align-items: center;
+    border: 5px solid rgb(13, 120, 221);
+    transition: background-color .4s ease-in-out, transform .2s ease-in-out, box-shadow .2s ease-in-out;
+    animation: whiteball-rotate 1s linear,
+                whiteball-rotate-2 1s linear forwards 2s;
+    transform-origin: 50% 100%;
+    &:hover {
+      cursor: pointer;
+      background-color: #114185;
+      transform: scale(1.2) rotateX(30deg);
+      -webkit-box-shadow: 0px 10px 5px -6px rgba(59, 50, 50, 0.43);
+      -moz-box-shadow: 0px 10px 5px -6px rgba(0, 0, 0, 0.43);
+      box-shadow: 0px 10px 5px -6px rgba(0, 0, 0, 0.43);
+    }
+  }
+}
+
+.anim-2-container {
+  background-image: url("../../images/sky.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh; // background-color: rgb(126, 18, 203);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+  perspective: 500px;
+  @include e(ninja) {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    img {
+      width: 500px;
+      height: 500px;
+      animation-name: ninja;
+      animation-duration: 5s;
+      animation-timing-function: cubic-bezier(.14, .51, .87, .54);
+      animation-fill-mode: both;
+      animation-iteration-count: infinite;
+      transform-origin: 100% 50%; // animation-direction: alternate;
+    }
+  }
+}
+
+.cloud-container {
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+  @include e(cloud1) {
+    width: 300px;
+    height: 150px;
+    animation: clouds 20s linear infinite backwards;
+  }
+  @include e(cloud2) {
+    width: 400px;
+    height: 200px;
+    animation: clouds 35s 5s linear infinite backwards;
+  }
+  @include e(cloud3) {
+    width: 300px;
+    height: 150px;
+    animation: clouds 15s 2s linear infinite backwards;
+  }
+}
+
+// Ninja Animation
+@keyframes ninja {
+  0% {
+    transform: translateX(-400px)
+  }
+  50% {
+    transform: translateX(400px)
+  }
+  51% {
+    transform: rotateY(180deg)
+  }
+  100% {
+    transform: translateX(-800px) rotateY(180deg);
+  }
+}
+
+// cloud animation
+@keyframes clouds {
+  0% {
+    transform: translateX(-500px);
+  }
+  100% {
+    transform: translateX(1500px);
+  }
+}
+
+@keyframes whiteball-rotate {
+  0%{
+    transform: rotateX(90deg)
+  }
+ 
+  100%{
+    transform: rotateX(0deg)
+  }
+}
+
+@keyframes whiteball-rotate-2 {
+  0%{
+    transform: rotateX(0deg)
+  }
+  100%{
+    transform: rotateX(-180deg)
+
+  }
+  
+}

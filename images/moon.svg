@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+<g id="moon-rays">
+	<linearGradient id="XMLID_196_" gradientUnits="userSpaceOnUse" x1="211.3617" y1="204.9588" x2="97.7613" y2="103.2123">
+		<stop  offset="0" style="stop-color:#74B9FA"/>
+		<stop  offset="1" style="stop-color:#D4E5FF"/>
+	</linearGradient>
+	<circle id="XMLID_157_" opacity="0.1" fill="url(#XMLID_196_)" cx="150" cy="150" r="124.4"/>
+	<linearGradient id="XMLID_197_" gradientUnits="userSpaceOnUse" x1="204.9058" y1="199.1765" x2="103.2574" y2="108.1348">
+		<stop  offset="0" style="stop-color:#74B9FA"/>
+		<stop  offset="1" style="stop-color:#D4E5FF"/>
+	</linearGradient>
+	<circle id="XMLID_155_" opacity="0.2" fill="url(#XMLID_197_)" cx="150" cy="150" r="111.3"/>
+</g>
+<g id="moon-face">
+	<linearGradient id="XMLID_198_" gradientUnits="userSpaceOnUse" x1="198.5222" y1="193.459" x2="108.6919" y2="113.0023">
+		<stop  offset="0" style="stop-color:#74B9FA"/>
+		<stop  offset="1" style="stop-color:#D4E5FF"/>
+	</linearGradient>
+	<circle id="XMLID_47_" fill="url(#XMLID_198_)" cx="150" cy="150" r="98.3"/>
+	<path id="XMLID_154_" opacity="0.21" fill="#7FBBEF" d="M150,51.7c54.3,0,98.3,44,98.3,98.3s-44,98.3-98.3,98.3"/>
+	<g id="XMLID_29_">
+		<circle id="XMLID_31_" fill="#A1B4FF" cx="101.3" cy="159.7" r="15"/>
+	</g>
+	<g id="XMLID_38_">
+		<g id="XMLID_35_" opacity="0.41">
+			<circle id="XMLID_36_" fill="#A2D5FF" cx="101.3" cy="103.8" r="15"/>
+		</g>
+		<g id="XMLID_34_" opacity="0.41">
+			<circle id="XMLID_37_" fill="#75B4FB" cx="103.8" cy="99.1" r="7.7"/>
+		</g>
+	</g>
+	<g id="XMLID_39_" opacity="0.41">
+		<circle id="XMLID_40_" fill="#75B4FB" cx="201.1" cy="196.6" r="28.1"/>
+	</g>
+	<g id="XMLID_98_" opacity="0.41">
+		<circle id="XMLID_99_" fill="#75B4FB" cx="209.7" cy="101.5" r="19.5"/>
+	</g>
+	<g id="XMLID_43_" opacity="0.41">
+		<circle id="XMLID_44_" fill="#A2D5FF" cx="142.4" cy="74.3" r="8.7"/>
+	</g>
+	<g id="XMLID_41_" opacity="0.41">
+		<circle id="XMLID_42_" fill="#75B4FB" cx="142.4" cy="73.8" r="4.5"/>
+	</g>
+	<g id="XMLID_100_" opacity="0.41">
+		<circle id="XMLID_101_" fill="#75B4FB" cx="192.8" cy="77.9" r="3.8"/>
+	</g>
+	<g id="XMLID_21_">
+		<circle id="XMLID_28_" fill="#A1B4FF" cx="199.2" cy="159.7" r="15"/>
+	</g>
+	
+		<path id="moon-mouth" fill="none" stroke="#0B2063" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M134.3,165.3c8.7,8.7,22.8,8.7,31.5,0"/>
+</g>
+<g id="moon-eyes">
+	
+		<path id="XMLID_32_" fill="none" stroke="#0B2063" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M112.3,126.3c5.9,5.9,15.4,5.9,21.3,0"/>
+	
+		<path id="XMLID_33_" fill="none" stroke="#0B2063" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M166.4,126.3c5.9,5.9,15.4,5.9,21.3,0"/>
+</g>
+</svg>
