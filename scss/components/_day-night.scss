@@ -1,247 +1,238 @@
 .day-night-wrapper {
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    align-items: center;
-    justify-items: center;
-    background: lightblue;
-    overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+  background: lightblue;
+  overflow: hidden;
 }
 
 // ------------------------------------------- day
 .day {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  height: 100vh;
+  .sun-container {
+    grid-area: 1/1; // transform: scale(1);
+    // transition: transform .2s;
+    animation: sun-scale-day 1s ease-in-out;
+    width: 100%;
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     align-items: center;
     justify-items: center;
+    svg {
+      animation: sun-svg-rock 10s linear infinite both;
+      max-width: 30em;
+      height: auto;
+    }
+  }
+  .moon-container {
+    grid-area: 1/1;
+    transform: scale(0);
+    transition: transform 0.2s;
     width: 100%;
     height: 100vh;
-    .sun-container {
-        grid-area: 1/1;
-        // transform: scale(1);
-        // transition: transform .2s;
-        animation: sun-scale-day 1s ease-in-out;
-        width: 100%;
-        height: 100vh;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        align-items: center;
-        justify-items: center;
-        svg {
-            animation: sun-svg-rock 10s linear infinite both;
-            max-width: 30em;
-            height: auto;
-        }
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    svg {
+      animation: sun-svg-rock 10s linear infinite both;
+      max-width: 30em;
+      height: auto;
     }
-    .moon-container {
-        grid-area: 1/1;
-        transform: scale(0);
-        transition: transform .2s;
-        width: 100%;
-        height: 100vh;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        align-items: center;
-        justify-items: center;
-        svg {
-            animation: sun-svg-rock 10s linear infinite both;
-            max-width: 30em;
-            height: auto;
-        }
-    }
-    .sun-eyes {
-        animation: sun-eyes 3s linear infinite;
-        transform-origin: 50% 50%;
-    }
-    #nightbg1 {
-        width: 120px;
-        height: 120px;
-        border-radius: 100%;
-        background-color: black;
-        transition: transform .2s ease-in .1s;
-        grid-area: 1/1;
-    }
-    #nightbg2 {
-        width: 100px;
-        height: 100px;
-        border-radius: 100%;
-        background-color: rgb(14, 35, 104);
-        background-size: cover;
-        transition: transform .2s ease-in;
-        grid-area: 1/1;
-    }
+  }
+  .sun-eyes {
+    animation: sun-eyes 3s linear infinite;
+    transform-origin: 50% 50%;
+  }
+  #nightbg1 {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    background-color: black;
+    transition: transform 0.2s ease-in 0.1s;
+    grid-area: 1/1;
+  }
+  #nightbg2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: rgb(14, 35, 104);
+    background-size: cover;
+    transition: transform 0.2s ease-in;
+    grid-area: 1/1;
+  }
 }
 
 // ------------------------------------------- night
 .night {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  .moon-container {
+    grid-area: 1/1;
+    transform: scale(1);
+    transition: transform 0.2s;
+    width: 100%;
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     align-items: center;
     justify-items: center;
+    border: 1px solid red;
+    svg {
+      animation: sun-svg-rock 10s linear infinite both;
+      max-width: 30em;
+      height: auto;
+    }
+  }
+  .sun-container {
     width: 100%;
     height: 100vh;
-    overflow: hidden;
-    .moon-container {
-        grid-area: 1/1;
-        transform: scale(1);
-        transition: transform .2s;
-        width: 100%;
-        height: 100vh;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        align-items: center;
-        justify-items: center;
-        border: 1px solid red;
-        svg {
-            animation: sun-svg-rock 10s linear infinite both;
-            max-width: 30em;
-            height: auto;
-        }
+    grid-area: 1/1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    transform: scale(0);
+    transition: transform 0.2s;
+    svg {
+      max-width: 30em;
+      height: auto;
     }
-    .sun-container {
-        width: 100%;
-        height: 100vh;
-        grid-area: 1/1;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        align-items: center;
-        justify-items: center;
-        transform: scale(0);
-        transition: transform .2s;
-        svg {
-            max-width: 30em;
-            height: auto;
-        }
-    }
-    #nightbg1 {
-        width: 120px;
-        height: 120px;
-        border-radius: 100%;
-        background-color: black;
-        transform: scale(30);
-        transition: transform .2s ease-in;
-        grid-area: 1/1;
-    }
-    #nightbg2 {
-        width: 100px;
-        height: 100px;
-        border-radius: 100%;
-        background-color: rgb(14, 35, 104);
-        background-size: cover;
-        transform: scale(30);
-        transition: transform .2s ease-in .1s;
-        grid-area: 1/1;
-    }
+  }
+  #nightbg1 {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    background-color: black;
+    transform: scale(30);
+    transition: transform 0.2s ease-in;
+    grid-area: 1/1;
+  }
+  #nightbg2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: rgb(14, 35, 104);
+    background-size: cover;
+    transform: scale(30);
+    transition: transform 0.2s ease-in 0.1s;
+    grid-area: 1/1;
+  }
 }
 
 // Continues animations
 #sun-rays {
-    animation: sunrays 20s infinite linear ;
-    transform-origin: 50% 50%;
+  animation: sunrays 20s infinite linear;
+  transform-origin: 50% 50%;
 }
 
 .changeday {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    border: 1px slid black;
-    padding: 2em;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 1px slid black;
+  padding: 2em;
 }
 
 .moon-ray-one {
-    animation: moon-ray-one 4s ease-in-out infinite ;
-    transform-origin: 50% 50%;
+  animation: moon-ray-one 4s ease-in-out infinite;
+  transform-origin: 50% 50%;
 }
 
 .moon-ray-two {
-    animation: moon-ray-one 4s ease-in-out infinite .7s ;
-    transform-origin: 50% 50%;
-    
+  animation: moon-ray-one 4s ease-in-out infinite 0.7s;
+  transform-origin: 50% 50%;
 }
 
 // Sun Animations
 @keyframes sunrays {
-    0% {
-        transform: rotate(0deg) scale(1);
-    }
-    50% {
-        transform: rotate(130deg) scale(1.2);
-    }
-    100% {
-        transform: rotate(360deg) scale(1);
-    }
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(130deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
 }
+
 @keyframes sun-svg-rock {
-    0% {
-        transform: translateX(-1em);
-    }
-    50% {
-        transform: translateX(2em);
-    }
-    100% {
-        transform: translateX(-1em);
-    }
+  0% {
+    transform: translateX(-1em);
+  }
+  50% {
+    transform: translateX(2em);
+  }
+  100% {
+    transform: translateX(-1em);
+  }
 }
 
-@keyframes sun-scale-day{
-    0% {
-        transform: scale(0);
-    }
-    50% {
-        transform: scale(1.5);
-    }
-    100% {
-        transform: scale(.8);
-    }
-    100% {
-        transform: scale(1);
-    }
+@keyframes sun-scale-day {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(.8);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
-
-
-
-
-
 
 @keyframes sun-eyes {
-    98% {
-        transform: none;
-        animation-timing-function: ease-in;
-    }
-    99% {
-        transform: scaleY(.2);
-    }
-    100% {
-        animation-timing-function: ease-out;
-    }
+  98% {
+    transform: none;
+    animation-timing-function: ease-in;
+  }
+  99% {
+    transform: scaleY(.2);
+  }
+  100% {
+    animation-timing-function: ease-out;
+  }
 }
+
 // Moon-animations
 @keyframes moon-ray-one {
-    0% {
-        transform: scale(1);
-        opacity: .1;
-        animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    }
-    50% {
-        transform: scale(1.1);
-        opacity: .2;
-        animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275);
-
-
-    }
-    100% {
-        transform: scale(1);
-        opacity: .1;
-        animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275);
-
-    }    
+  0% {
+    transform: scale(1);
+    opacity: 0.1;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.2;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.1;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
 }
-
